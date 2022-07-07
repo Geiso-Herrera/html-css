@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style>
+        p {
+            /* utilizando o nome do seletor, todos os seletores
+             desta pagina receem esse estilo
+             /* Utilizando PONTO, todos os seletores que tenham o
+              atributo class que contenha esse nome recebem o estilo*/ 
+            background-color: #cccc;
+        }
+
+        .destaque {
+            background-color: #00ff2a;
+        }
+
+        #especifico{
+            /* utilizando #, apenas o seletor que tenha 
+            o atributo id-"especifico" recebe esse estilo */
+                border: 1px solid black;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="/css/area51.css">
+
+</head>
+
+<body>
+    <a href="/index.html"> Voltar para a pagina inicial</a>
+    <hr>
+    <!-- estilo em linha é recomendado quando nao passa de 3 atributos -->
+    <p style="color: red; background-color: black; font-weight: bold;"> vermelho</p>
+
+    <span style="border:1px dashed black;">Texto normal</span>
+
+    <ul style="font-weight: bold; background:red; width: 200px">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+
+    <img style="height:48; width:48px; border-radius:50%;" src="/Aula01/interno/js.png" alt="">
+
+    <div style="text-align:center;border: 1px solid black;">
+        <p>A</p>
+        <p style="color:cadetblue;">B</p>
+        <p class="destaque">C</p>
+    </div>
+
+    <p>testando css</p>
+    <span class="destaque">O empenho em analisar o desenvolvimento contínuo de distintas formas de atuação maximiza as
+        possibilidades por
+        conta dos paradigmas corporativos. A prática cotidiana prova que o comprometimento entre as equipes promove a
+        alavancagem das condições financeiras e administrativas exigidas. Assim mesmo, a competitividade nas transações
+        comerciais agrega valor ao estabelecimento do sistema de participação geral.
+    </span>
+
+    <br>
+    <i class="destaque">help</i>
+
+    <b id="especifico">Geiso</b>
+
+</body>
+
+</html>
